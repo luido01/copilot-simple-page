@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    color: #d9a5a5;
+    padding: 10px;
+    text-align: center;
+    display: flex; 
+    justify-content: space-around; 
+    width: 100%;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: justify;
+    
+}
+
+nav a:hover {
+    text-decoration: underline;
+    
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Grid style for a 5 by 3 layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Fully responsive columns */
+    gap: 10px;
+    padding: 20px;
+    overflow: hidden;
+    padding: 1rem; /* Bootstrap padding */
+    border-radius: 10px; /* Rounds the corners */
+}
+
+.grid-item img {
+    
+    width: 100%;  /* Makes the image responsive to its container */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures it covers the area without distortion */
+    border-radius: 10px; /* Rounds the corners */
+    padding: 0.5rem; /* Bootstrap padding */
+}
+/* Card-like layout for the "Projects" section */
+.card {
+    background-image: url('https://cdn.britannica.com/39/226539-050-D21D7721/Portrait-of-a-cat-with-whiskers-visible.jpg'); /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 1em;
+    color: #666;
+}
+
+
+
